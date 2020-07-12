@@ -1,0 +1,406 @@
+/*all neccesary fonts start*/
+@font-face{
+	src: url(../fonts/BrandonGrotesque-Bold.ttf);
+	font-family: BrandonGrotesque-Bold;
+}
+@font-face{
+	src: url(../fonts/BrandonGrotesque-Light.ttf);
+	font-family: BrandonGrotesque-Light;
+}
+@font-face{
+	src: url(../fonts/BrandonGrotesque-Medium.ttf);
+	font-family: BrandonGrotesque-Medium;
+}
+@font-face{
+	src: url(../fonts/BrandonGrotesque-Regular.ttf);
+	font-family: BrandonGrotesque-Regular;
+}
+/*all neccesary fonts end*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family:BrandonGrotesque-Regular;
+	font-weight: 400;
+	color: #777777;
+}
+.wrapper{
+	margin: 0 auto;
+	width: 80%;
+	overflow: hidden;
+}
+.wrapper2 {
+	margin: 0 auto;
+	width: 70%;
+	overflow: hidden;
+}
+.common_title{
+	font-family: BrandonGrotesque-Light;
+	font-size: 60px;
+	font-weight: 400;
+	color: #222222;
+	text-transform: capitalize;
+}
+.common_title span{
+	font-family: BrandonGrotesque-Bold;
+	font-weight: 700;
+}
+/*Header start*/
+header{
+	padding: 45px 0 100px;
+	background-image: url(../images/Escape.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.logo {
+	width: 13%;
+	float: left;
+}
+.logo img{
+	width: 100%;
+}
+.menu {
+	width: 80%;
+	float: right;
+}
+.menu ul{
+	float: right;
+	list-style-type: none;
+}
+.menu ul li{
+	float: left;
+}
+.menu ul li a{
+	margin: 0 15px;
+	padding: 5px 0;
+	font-family: BrandonGrotesque-Medium;
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	transition: 0.3s;
+	border-bottom: 1px solid transparent;
+}
+.menu ul li:last-child a{
+	margin-right: 0;
+}
+.menu ul li a:hover{
+	border-bottom: 1px solid #fff;
+}
+.banner {
+	padding-top: 150px;
+	text-align: center;
+}
+.banner h1{
+	font-family: BrandonGrotesque-Light;
+	font-weight: 300;
+	color: #fff;
+}
+.banner h2{
+	margin: 20px 0 50px;
+	font-family: BrandonGrotesque-Bold;
+	font-size: 66px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.banner button{
+	font-family: BrandonGrotesque-Bold;
+	font-weight: 700;
+	font-size: 23px;
+	color: #fff;
+	width: 240px;
+	height: 65px;
+	background: transparent;
+	border: 1px solid #fff;
+	outline: none;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.banner button:hover{
+	background: #fff;
+	color: #777777;
+}
+/*Header end*/
+/*Web Dev start*/
+.about{
+	padding: 100px 0;
+}
+.intro{
+	width: 63%;
+	float: left;
+}
+.intro p{
+	margin-top: 30px;
+	font-size: 18px;
+}
+.intro_img{
+	padding: 50px 0;
+	width: 23%;
+	float: right;
+}
+.intro_img img{
+	width: 100%;
+}
+/*Web Dev end*/
+/*Identity start*/
+.identity{
+	padding: 100px 0;
+	background-color: #fafafa;
+}
+.identity .intro_img{
+	float: left;
+}
+.identity .intro{
+	float: right;
+}
+/*Identity end*/
+/*service start*/
+.service{
+	padding: 100px 0;
+}
+.single{
+	margin-bottom: 45px;
+	width: 48%;
+	float: left;
+}
+.s_icon{
+	width: 15%;
+	float: left;
+}
+.s_icon img{
+	width: 100%;
+}
+.s_text{
+	width: 80%;
+	float: right;
+}
+.s_text h3{
+	font-family: BrandonGrotesque-Medium;
+	font-size: 22px;
+	font-weight: 500;
+	color: #222222;
+}
+.s_text p{
+	margin-top: 15px;
+	font-size: 18px;
+	line-height: 20px;
+}
+.single:nth-child(even){
+	margin-left: 3%;
+}
+/*service end*/
+/*clients start*/
+.client {
+	padding: 100px 0;
+	background-color: #fafafa;
+}
+.title{
+	text-align: center;
+}
+.title p {
+	font-size: 22px;
+}
+.review {
+	margin: 35px 0;
+	overflow: hidden;
+}
+.pro_pic {
+	width: 22%;
+	float: left;
+}
+.review2 .pro_pic{
+	float: right;
+}
+.pro_pic img{
+	width: 100%;
+	border-radius: 50%;
+}
+.feedback {
+	width: 50%;
+	float: right;
+}
+.review2 .feedback{
+	float: left;
+}
+.feedback q{
+	font-size: 26px;
+}
+.client_name {
+	font-size: 20px;
+	color: #7690c5;
+}
+#talkbubble,#talkbubble2 {
+	padding: 30px 70px;
+	border: 1px solid #f1f1f1;
+    background: #fff;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#talkbubble:before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #fff;
+    border-bottom: 13px solid transparent;
+}
+#talkbubble2:before{
+	content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 26px solid #fff;
+    border-bottom: 13px solid transparent;
+}
+/*clients end*/
+/*sponsors start*/
+.sponsor{
+	padding: 60px 0;
+}
+.box{
+	margin-right: 6.3%;
+	width: 20%;
+	float: left;
+}
+.box img{
+	width: 100%;
+}
+.box:last-child{
+	margin-right: 0;
+}
+/*sponsors end*/
+/*team start*/
+.team{
+	padding: 100px 0;
+	background-color: #111111;
+}
+.team .title h1{
+	color: #fff;
+}
+.member{
+	margin: 60px 4.5% 50px 0;
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+.member img{
+	width: 92%;
+	border: 5px solid #fff;
+	border-radius: 50%;
+}
+.member h4{
+	font-size: 18px;
+	color: #fff;
+}
+.member p{
+	color: #fff;
+}
+.member i{
+	font-size: 18px;
+	color: #fff;
+	margin: 5px;
+	padding: 8px 10px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	transition: 0.3s
+}
+.member i:hover{
+	background: #fff;
+	color: #111111;
+}
+.member:last-child{
+	margin-right: 0;
+}
+.description{
+	margin: 0 auto;
+	width: 50%;
+	color: #ebebeb;
+	text-align: center;
+}
+/*team end*/
+/*contact us start*/
+.contact{
+	padding: 100px 0;
+	background-color: #7690c5;
+	color: #fff;
+}
+.contact_info{
+	width: 45%;
+	float: left;
+}
+.contact_info h1{
+	color: #fff;
+}
+.contact_info p{
+	font-size: 18px;
+	margin: 15px 0 30px;
+}
+.content i{
+	font-size: 20px;
+	margin: 15px 0;
+	width: 45%;
+	float: left;
+}
+.content i span{
+	font-size: 18px;
+	margin-left: 10px;
+}
+.content i:nth-child(even){
+	float:right;
+}
+.send_msg{
+	width: 45%;
+	float: right;
+}
+.send_msg input,.send_msg textarea{
+	padding: 15px;
+	margin-bottom: 30px;
+	display: block;
+	width: 90%;
+	border: 0;
+	outline: 0;
+}
+.send_msg button{
+	padding: 10px 30px;
+	font-family: BrandonGrotesque-Regular;
+	font-weight: 400;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	background: transparent;
+	border: 1px solid #fff;
+	outline: none;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.send_msg button:hover{
+	background: #fff;
+	color: #777777;
+}
+/*contact us end*/
+/*footer start*/
+footer{
+	padding: 30px 0;
+	background-color: #7690c5;
+	text-align: center;
+	border-top: 1px solid #87a0d2;
+	/*border: 1px solid red;*/
+}
+footer p{
+	font-family: BrandonGrotesque-Medium;
+	font-size: 16px;
+	color: #fff;
+}
+/*footer end*/
